@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_social'
   s.version     = SpreeSocial.version
-  s.summary     = 'Adds social network login services (OAuth) to Spree'
+  s.summary     = 'Adds social network login services (OAuth) to Solidus'
   s.description = s.summary
   s.required_ruby_version = '>= 2.1.0'
 
@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_runtime_dependency 'spree_core', '~> 3.1.0.beta'
+  s.add_dependency "solidus", [">= 1.2.0.alpha", "< 1.3.0"]
   s.add_runtime_dependency 'omniauth'
   s.add_runtime_dependency 'oa-core'
   s.add_runtime_dependency 'omniauth-twitter'
